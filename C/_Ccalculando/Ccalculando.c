@@ -3,35 +3,32 @@
 
 int main() {
   /* code */
+  printf(">>>>> Vamos Calcular...\n");
   float priNum,segNum,resultado;
-  char operador,op;
-  
-  printf("Informe o primeiro número: ");
+  char operador;
+  char opc = 's';
+  while(opc =='s'){
+    
+  printf(">>>Informe o primeiro número: ");
   scanf("%f",&priNum);
-  printf("Informe o operador +,-,*,/: ");
+  printf(">>>Informe o operador +,-,*,/: ");
   scanf("%s",&operador);
-  printf("Informe o segundo número: ");
+  printf(">>>Informe o segundo número: ");
   scanf("%f",&segNum);
   
-
-do {  
-
-  if(operador=='+'){
+if(operador=='+'){
 	  resultado =(priNum+segNum);
-	  printf("\n O resultado é: %f", resultado);
-  }
+	}
   
   else
   if(operador=='-'){
 	  resultado =(priNum-segNum);
-	  printf("\n O resultado é: %f", resultado);
-  }
+	}
   
   else
   if(operador=='*'){
 	  resultado =(priNum*segNum);
-	  printf("\n O resultado é: %f", resultado);
-  }
+	}
   
   else
   if(operador=='/'){
@@ -39,14 +36,16 @@ do {
 		  printf("Não é possível divisão por 0");
 	  }
 	  resultado =(priNum/segNum);
-	  printf("\n O resultado é: %f", resultado);
-      
+	       
   }
+  printf("\n O resultado de %f %c %f eh %f",priNum, operador, segNum, resultado);
  
   printf("\n Deseja realizar outro calculo?(s=Sim,n=Não): ");
-  scanf("%i",&op);
+  scanf("%s",&opc);
   
-  } while(op =='s');
+  }
+ 
   
   return 0;
+ 
 }
