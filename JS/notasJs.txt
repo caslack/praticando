@@ -1,0 +1,41 @@
+
+#JS Orientado a Objeto
+Classificação: 
+Agrupar objetos semelhantes em um unico lugar mapear 
+caracteristicas em comum
+Atributos: informações/dados da classe
+Ex:
+Carro: Cor, placa, fabricante
+
+Metodo: são as ações que a classe pode realizar
+
+Ex de classe JS:
+
+class Jogo{
+    
+    //Atributos
+    constructor(){
+        this.titulo = "",
+        this.genero = "",
+        this.produtora = "",
+        this.preco = 0
+ }
+ //Metodo
+ Abrir(){
+     console.log("Jogo abrindo!");
+ }
+ //Metodo
+ Carregar(){
+      console.log("Loading...");
+ }
+ //Metodo
+ Fechar(){
+      console.log("Aperte ESC para fechar...");
+
+ }
+
+}
+
+# Abstração: Simplificação de conceito. Extrair o essencial 
+de algo. Extrair da entidade apenas os atributos e metodos 
+essenciais
